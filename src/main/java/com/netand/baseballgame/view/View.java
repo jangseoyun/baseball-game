@@ -30,6 +30,7 @@ public class View {
         System.out.println("----------------------------[ Result ]------------------------");
         System.out.println("----[ball: " + result.getBallCount() + "]");
         System.out.println("----[strike: " + result.getStrikeCount() + "]");
+        System.out.println("----[nothing: " + result.getNothing() + "]");
         System.out.println("--------------------------------------------------------------");
     }
 
