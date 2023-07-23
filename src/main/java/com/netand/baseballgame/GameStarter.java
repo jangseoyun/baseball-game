@@ -10,14 +10,14 @@ import static com.netand.baseballgame.computer.ComputerMachine.COMPUTER_BALLS;
 import static com.netand.baseballgame.player.InputNumber.PLAYER_BALLS;
 
 public class GameStarter {
+    /**
+     * 객체 정의
+     * - View: 콘솔(화면) 출력 역할
+     * - ComputerMachine: 컴퓨터 번호 추출 역할
+     * - InputNumber: 플레이어 입력값 검증 및 가공 역할
+     * - CompareMachine: 컴퓨터와 플레이어 숫자 비교 역할
+     */
     public static void main(String[] args) {
-        /**
-         * 객체 정의
-         * - View
-         * - ComputerMachine
-         * - InputNumber
-         * - CompareMachine
-         */
         View view = new View();
         InputNumber inputNumber = new InputNumber();
         CompareMachine compareMachine = new CompareMachine();
