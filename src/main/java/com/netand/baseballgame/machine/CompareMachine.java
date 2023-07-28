@@ -5,9 +5,11 @@ import com.netand.baseballgame.common.Result;
 
 import java.util.List;
 
+import static com.netand.baseballgame.GameStarter.GAME_ACTION;
 import static com.netand.baseballgame.computer.ComputerMachine.COMPUTER_BALLS;
 
 public class CompareMachine {
+    private static final int ALL = 3;
     private int ballCount;
     private int strikeCount;
 
@@ -16,14 +18,15 @@ public class CompareMachine {
         this.strikeCount = 0;
     }
 
-    public Result compareNumber(List<Ball> computerBalls, List<Ball> playerBall) {
+    public Result compareNumber( List<Ball> playerBall ) {
         int locate = 0;
         for (Ball ball : playerBall) {
             match(ball, locate);
             locate++;
         }
+        GAME_ACTION = ( ballCount != ALL );
 
-        return new Result((ballCount - strikeCount), strikeCount);
+        return new Result( (ballCount - strikeCount), strikeCount, GAME_ACTION );
     }
 
     private void match(Ball ball, int locate) {
@@ -42,4 +45,5 @@ public class CompareMachine {
             strikeCount++;
         }
     }
+
 }
