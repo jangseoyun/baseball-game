@@ -28,8 +28,8 @@ public class View {
     public void gameResultPrint(Result result) {
         System.out.println("--------------------------------------------------------------");
         System.out.println("----------------------------[ Result ]------------------------");
-        System.out.println("----[ball: " + result.getBallCount() + "]");
-        System.out.println("----[strike: " + result.getStrikeCount() + "]");
+        System.out.print("---- [ball: " + result.getBallCount() + "]");
+        System.out.print("----[strike: " + result.getStrikeCount() + "]");
         System.out.println("----[nothing: " + result.getNothing() + "]");
         System.out.println("--------------------------------------------------------------");
     }
