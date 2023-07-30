@@ -16,8 +16,10 @@ public class CompareMachine {
         this.strikeCount = 0;
     }
 
-    public Result compareNumber(List<Ball> computerBalls, List<Ball> playerBall) {
+    public Result compareNumber(List<Ball> playerBall) {
         int locate = 0;
+        ballCount = 0;
+        strikeCount = 0;
         for (Ball ball : playerBall) {
             match(ball, locate);
             locate++;
