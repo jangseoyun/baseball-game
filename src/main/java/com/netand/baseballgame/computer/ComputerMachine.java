@@ -9,7 +9,7 @@ public class ComputerMachine {
     private static final int LENGTH = 3;
     public static final List<Ball> COMPUTER_BALLS = new ArrayList<>( LENGTH );
 
-    public ComputerMachine() {
+    public void createComputerBall() {
         while ( COMPUTER_BALLS.size() < LENGTH ) {
             validBall(new Ball());
         }
