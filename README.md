@@ -26,19 +26,19 @@
 
 ## 구현 내용
 1-1) GameStarter main() 함수를 실행하면 게임이 시작됩니다.
-이때 컴퓨터 랜덤 번호를 추출하여 리스트에 저장합니다. 
+이때 컴퓨터 랜덤 번호를 추출하여 리스트에 저장합니다. <br>
 <img width="595" alt="image" src="https://github.com/jangseoyun/baseball-game/assets/94329274/af285fe8-4c36-43f3-830a-160897b77eec">
 
-1-2) 잘못된 숫자 입력시 예외가 발생하며 게임은 종료됩니다.
+1-2) 잘못된 숫자 입력시 예외가 발생하며 게임은 종료됩니다. <br>
 <img width="848" alt="image" src="https://github.com/jangseoyun/baseball-game/assets/94329274/3787bba0-065c-42e2-94d2-a710e352809d">
 
 ### 발생 상황 콘솔
 
-- 일치하는 공이 없는 경우: nothing
+- 일치하는 공이 없는 경우: nothing <br>
 <img width="586" alt="image" src="https://github.com/jangseoyun/baseball-game/assets/94329274/f2ec9e3f-860f-47fb-8e44-4ba97a99173f">
-- 스트라이크
+- 스트라이크 <br>
 <img width="570" alt="image" src="https://github.com/jangseoyun/baseball-game/assets/94329274/9535bb36-d58c-45e1-b7b2-39bfbe7df9c6">
-- 볼
+- 볼 <br>
 <img width="574" alt="image" src="https://github.com/jangseoyun/baseball-game/assets/94329274/61576142-e41f-4d77-b721-901a190ade0a">
-- 스트라이크 + 볼
+- 스트라이크 + 볼 <br>
 <img width="601" alt="image" src="https://github.com/jangseoyun/baseball-game/assets/94329274/05ee2b75-46da-4338-bb2d-c1987ae0370b">
