@@ -2,8 +2,11 @@ package com.netand.baseballgame.common;
 
 import lombok.Getter;
 
+import static com.netand.baseballgame.GameStarter.GAME_ACTION;
+
 @Getter
 public class Result {
+    private final int MAX = 3;
     private int ballCount;
     private int strikeCount;
     private String nothing;
@@ -11,9 +14,16 @@ public class Result {
     public Result(int ballCount, int strikeCount) {
         this.nothing = "-";
         this.ballCount = ballCount;
-        this.strikeCount = strikeCount;
+        this.strikeCount = checkAll(strikeCount);
 
         checkNoting(ballCount + strikeCount);
+    }
+
+    private int checkAll(int strikeCount) {
+        if (strikeCount == MAX) {
+            GAME_ACTION = false;
+        }
+        return strikeCount;
     }
 
     private void checkNoting(int allCount) {
