@@ -29,24 +29,24 @@ public class GameStarter {
 
         while (GAME_ACTION) {
             run();
+            VIEW.gameStatePrint();
+            GAME_ACTION = inputNumber.setPlayStateData();
         }
-        VIEW.gameStatePrint();
-        GAME_ACTION = inputNumber.setPlayStateData();
 
         VIEW.endPrint();
     }
 
     private static void run() {
-        //Computer & Player Ball Setting
-        computerMachine.createComputerBall();
-        VIEW.computerSetting(COMPUTER_BALLS);
-        VIEW.playerSetting();
-        inputNumber.setData();
-        VIEW.playerInputPrint(PLAYER_BALLS);
-
-        Result result = compareMachine.compareNumber(PLAYER_BALLS);
-        VIEW.gameResultPrint(result);
-        ballClear();
+        while (GAME_ACTION) {
+            computerMachine.createComputerBall();
+            VIEW.computerSetting(COMPUTER_BALLS);
+            VIEW.playerSetting();
+            inputNumber.setData();
+            VIEW.playerInputPrint(PLAYER_BALLS);
+            Result result = compareMachine.compareNumber(PLAYER_BALLS);
+            VIEW.gameResultPrint(result);
+            ballClear();
+        }
     }
 
     private static void ballClear() {
