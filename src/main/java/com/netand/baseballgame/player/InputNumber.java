@@ -6,8 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import static com.netand.baseballgame.computer.ComputerMachine.COMPUTER_BALLS;
-
 public class InputNumber {
     private static final int LENGTH = 3;
     public static final List<Ball> PLAYER_BALLS = new ArrayList<>(LENGTH);
@@ -25,9 +23,8 @@ public class InputNumber {
 
     public boolean setPlayStateData() {
         int playState = sc.nextInt();
+
         if (playState == 1) {
-            PLAYER_BALLS.clear();
-            COMPUTER_BALLS.clear();
             return true;
         }
 
