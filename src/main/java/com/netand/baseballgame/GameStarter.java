@@ -15,6 +15,8 @@ import static com.netand.baseballgame.player.InputNumber.PLAYER_BALLS;
  * - ComputerMachine: 컴퓨터 번호 추출 역할
  * - InputNumber: 플레이어 입력값 검증 및 가공 역할
  * - CompareMachine: 컴퓨터와 플레이어 숫자 비교 역할
+ * - GAME_ACTION: 게임 진행 여부
+ * - PLAYER_BALLS / COMPUTER_BALLS: 컴퓨터 번호, 플레이어 입력 번호 리스트
  */
 
 public class GameStarter {
@@ -27,7 +29,7 @@ public class GameStarter {
     public static void main(String[] args) {
         VIEW.startPrint();
 
-        while (GAME_ACTION) {
+        while ( GAME_ACTION ) {
             run();
             VIEW.gameStatePrint();
             GAME_ACTION = inputNumber.setPlayStateData();
@@ -37,14 +39,14 @@ public class GameStarter {
     }
 
     private static void run() {
-        while (GAME_ACTION) {
+        while ( GAME_ACTION ) {
             computerMachine.createComputerBall();
-            VIEW.computerSetting(COMPUTER_BALLS);
+            VIEW.computerSetting( COMPUTER_BALLS );
             VIEW.playerSetting();
             inputNumber.setData();
-            VIEW.playerInputPrint(PLAYER_BALLS);
-            Result result = compareMachine.compareNumber(PLAYER_BALLS);
-            VIEW.gameResultPrint(result);
+            VIEW.playerInputPrint( PLAYER_BALLS );
+            Result result = compareMachine.compareNumber( PLAYER_BALLS );
+            VIEW.gameResultPrint( result );
             ballClear();
         }
     }

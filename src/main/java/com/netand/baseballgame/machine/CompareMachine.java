@@ -7,6 +7,9 @@ import java.util.List;
 
 import static com.netand.baseballgame.computer.ComputerMachine.COMPUTER_BALLS;
 
+/**
+ * 컴퓨터 추출 번호와 사용자 입력 번호 비교 머신 로직 (도메인)
+ */
 public class CompareMachine {
     private int ballCount;
     private int strikeCount;
@@ -16,31 +19,31 @@ public class CompareMachine {
         this.strikeCount = 0;
     }
 
-    public Result compareNumber(List<Ball> playerBall) {
+    public Result compareNumber( List< Ball > playerBall ) {
         int locate = 0;
         ballCount = 0;
         strikeCount = 0;
-        for (Ball ball : playerBall) {
-            match(ball, locate);
+        for ( Ball ball : playerBall ) {
+            match( ball, locate );
             locate++;
         }
 
-        return new Result((ballCount - strikeCount), strikeCount);
+        return new Result( ( ballCount - strikeCount ), strikeCount );
     }
 
-    private void match(Ball ball, int locate) {
-        getStrikeCount(ball, locate);
-        getBallCount(ball);
+    private void match( Ball ball, int locate ) {
+        getStrikeCount( ball, locate );
+        getBallCount( ball );
     }
 
-    private void getBallCount(Ball ball) {
-        if (COMPUTER_BALLS.contains(ball)) {
+    private void getBallCount( Ball ball ) {
+        if ( COMPUTER_BALLS.contains( ball ) ) {
             ballCount++;
         }
     }
 
-    private void getStrikeCount(Ball ball, int locate) {
-        if (COMPUTER_BALLS.get(locate).equals(ball)) {
+    private void getStrikeCount( Ball ball, int locate ) {
+        if ( COMPUTER_BALLS.get( locate ).equals( ball ) ) {
             strikeCount++;
         }
     }

@@ -5,6 +5,9 @@ import com.netand.baseballgame.common.Result;
 
 import java.util.List;
 
+/**
+ * 콘솔창 view print
+ */
 public class View {
     public void startPrint() {
         System.out.println("--------------------------------------------------------------");
@@ -13,19 +16,19 @@ public class View {
     }
 
     public void playerSetting() {
-        System.out.println("----[player]---- 1~9 사이의 숫자를 3자리를 입력해 주세요 --------------");
+        System.out.println( "----[player]---- 1~9 사이의 숫자를 3자리를 입력해 주세요 --------------" );
     }
 
-    public void computerSetting(List<Ball> computerBalls) {
+    public void computerSetting( List< Ball > computerBalls ) {
         System.out.println( "computer number setting: " + computerBalls );
 
     }
 
-    public void playerInputPrint(List<Ball> playerBalls) {
+    public void playerInputPrint( List< Ball > playerBalls ) {
         System.out.println("player input number: " + playerBalls);
     }
 
-    public void gameResultPrint(Result result) {
+    public void gameResultPrint( Result result ) {
         System.out.println("--------------------------------------------------------------");
         System.out.println("----------------------------[ Result ]------------------------");
         System.out.print("---- [ball: " + result.getBallCount() + "]");
@@ -40,6 +43,6 @@ public class View {
     }
 
     public void endPrint() {
-        System.out.println("프로그램을 종료 합니다.");
+        System.out.println( "프로그램을 종료 합니다." );
     }
 }
