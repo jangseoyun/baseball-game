@@ -21,10 +21,10 @@ import static com.netand.baseballgame.player.InputNumber.PLAYER_BALLS;
 
 public class GameStarter {
     public static boolean GAME_ACTION = true;
-    private static View VIEW = new View();
-    private static ComputerMachine computerMachine = new ComputerMachine();
-    private static InputNumber inputNumber = new InputNumber();
-    private static CompareMachine compareMachine = new CompareMachine();
+    private static final View VIEW = new View();
+    private static final ComputerMachine computerMachine = new ComputerMachine();
+    private static final InputNumber inputNumber = new InputNumber();
+    private static final CompareMachine compareMachine = new CompareMachine();
 
     public static void main(String[] args) {
         VIEW.startPrint();

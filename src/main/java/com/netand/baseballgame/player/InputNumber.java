@@ -15,29 +15,24 @@ import java.util.Scanner;
 public class InputNumber {
     private static final int LENGTH = 3;
     public static final List< Ball > PLAYER_BALLS = new ArrayList<>( LENGTH );
-    private Scanner sc;
+    private final Scanner sc;
 
     public InputNumber() {
         this.sc = new Scanner( System.in );
     }
 
-    public List< Ball > setData() {
+    public void setData() {
         String request = sc.next();
         splitInputNumber( request );
-        return PLAYER_BALLS;
     }
 
     public boolean setPlayStateData() {
         int playState = sc.nextInt();
 
-        if ( playState == 1 ) {
-            return true;
-        }
-
-        return false;
+        return playState == 1;
     }
 
-    private void splitInputNumber(String request ) {
+    private void splitInputNumber( String request ) {
         String[] split = request.split("");
 
         for ( String number : split ) {

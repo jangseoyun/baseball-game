@@ -10,10 +10,9 @@ import static com.netand.baseballgame.GameStarter.GAME_ACTION;
  */
 @Getter
 public class Result {
-
     private static final int MAX = 3;
-    private int ballCount;
-    private int strikeCount;
+    private final int ballCount;
+    private final int strikeCount;
     private String nothing;
 
     public Result( int ballCount, int strikeCount ) {

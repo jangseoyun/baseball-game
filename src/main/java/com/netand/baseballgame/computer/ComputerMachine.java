@@ -20,7 +20,7 @@ public class ComputerMachine {
     }
 
     private void validBall( Ball createBall ) {
-        if ( COMPUTER_BALLS.contains(createBall) ) {
+        if ( COMPUTER_BALLS.contains( createBall ) ) {
             return;
         }
 
