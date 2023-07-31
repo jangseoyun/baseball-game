@@ -15,7 +15,7 @@ public class View {
         System.out.println("--------------------------------------------------------------");
     }
 
-    public void playerSetting() {
+    public void playerPrint() {
         System.out.println( "----[player]---- 1~9 사이의 숫자를 3자리를 입력해 주세요 --------------" );
     }
 

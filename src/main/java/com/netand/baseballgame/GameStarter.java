@@ -42,7 +42,7 @@ public class GameStarter {
         while ( GAME_ACTION ) {
             computerMachine.createComputerBall();
             VIEW.computerSetting( COMPUTER_BALLS );
-            VIEW.playerSetting();
+            VIEW.playerPrint();
             inputNumber.setData();
             VIEW.playerInputPrint( PLAYER_BALLS );
             Result result = compareMachine.compareNumber( PLAYER_BALLS );
