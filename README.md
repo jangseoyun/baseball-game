@@ -27,18 +27,25 @@
 ## 구현 내용
 1-1) GameStarter main() 함수를 실행하면 게임이 시작됩니다.
 이때 컴퓨터 랜덤 번호를 추출하여 리스트에 저장합니다. <br>
-<img width="595" alt="image" src="https://github.com/jangseoyun/baseball-game/assets/94329274/af285fe8-4c36-43f3-830a-160897b77eec">
+![image](https://github.com/jangseoyun/springjpa-mustache-article/assets/94329274/c944924b-0f7d-49e4-b53c-a96ac9095c52)
 
 1-2) 잘못된 숫자 입력시 예외가 발생하며 게임은 종료됩니다. <br>
-<img width="848" alt="image" src="https://github.com/jangseoyun/baseball-game/assets/94329274/3787bba0-065c-42e2-94d2-a710e352809d">
+![image](https://github.com/jangseoyun/springjpa-mustache-article/assets/94329274/6c16c02b-a55a-47ec-8f0f-77fe6f027c2a)
 
 ### 발생 상황 콘솔
 
 - 일치하는 공이 없는 경우: nothing <br>
-<img width="586" alt="image" src="https://github.com/jangseoyun/baseball-game/assets/94329274/f2ec9e3f-860f-47fb-8e44-4ba97a99173f">
+일치하지 않는 경우 컴퓨터가 뽑은 3개의 숫자를 모두 맞힐때까지 게임이 실행된다. <br>
+![image](https://github.com/jangseoyun/springjpa-mustache-article/assets/94329274/01c4d519-14a7-446f-9ad1-ec63229bc421)
+
 - 스트라이크 <br>
-<img width="570" alt="image" src="https://github.com/jangseoyun/baseball-game/assets/94329274/9535bb36-d58c-45e1-b7b2-39bfbe7df9c6">
+![image](https://github.com/jangseoyun/springjpa-mustache-article/assets/94329274/1cf71f9f-a992-43d2-9f34-11cceceb5174)
+
 - 볼 <br>
-<img width="574" alt="image" src="https://github.com/jangseoyun/baseball-game/assets/94329274/61576142-e41f-4d77-b721-901a190ade0a">
+![image](https://github.com/jangseoyun/springjpa-mustache-article/assets/94329274/de9afe60-4982-4ed9-a511-3be7b7146b22)
+
 - 스트라이크 + 볼 <br>
-<img width="601" alt="image" src="https://github.com/jangseoyun/baseball-game/assets/94329274/05ee2b75-46da-4338-bb2d-c1987ae0370b">
+![image](https://github.com/jangseoyun/springjpa-mustache-article/assets/94329274/0df16d27-452c-4ece-bdd5-ef7068c4e2ce)
+
+- 모든 공이 일치하는 경우 (게임 종료 여부 출력) <br>
+![image](https://github.com/jangseoyun/springjpa-mustache-article/assets/94329274/f7ae553f-2a41-4f2a-a9a6-35625d40d1fd)
